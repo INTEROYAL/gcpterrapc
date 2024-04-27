@@ -10,14 +10,14 @@ terraform {
 provider "google" {
   # Configuration options
   region = "us-central1"
-  project = "thisiscrealm"
+  project = "gcp-cli-testing"
   zone = "us-central1-a"
-  credentials = "thisismustafar-98bc057b15db.json"
+  credentials = "gcp-cli-testing-cab999668e48.json"
 
 }
 
 resource "google_storage_bucket" "bucket1" {
-  name          = "copy_this_and_chewbacca_will_raw_wookie_you_no_diddy"
+  name          = "imageroyalvpc"
   location      = "us-central1"
   force_destroy = true
 
